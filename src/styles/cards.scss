@@ -1,0 +1,39 @@
+.container-page {
+  min-height: 100vh;
+  width: 100%;
+  &-cards {
+    display: flex;
+    margin: 35px;
+    height: 200px;
+    border-radius: 8px;
+    justify-content: space-around;
+    &-card {
+        display: flex;
+        flex-direction: column;
+        width: 375px;
+        height: 100%;
+        justify-content: space-around;
+        border-radius: 8px;
+      &-text {
+        font-family: "Montserrat", sans-serif;
+        font-size: 14px;
+        font-weight: 500;
+        color: #6c6c6c;
+        margin-left: 15px;
+      }
+      &-image {
+        width: 35px;
+        height: 35px;
+        margin: 0 0 10px 17px;
+      }
+      &-number {
+        font-family: "Montserrat", sans-serif;
+        font-size: 30px;
+        font-weight: 700;
+        display: flex;
+        justify-content: end;
+        margin: 35px 20px 0 0;
+      }
+    }
+  }
+}

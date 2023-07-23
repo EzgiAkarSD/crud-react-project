@@ -1,0 +1,178 @@
+.container-students {
+  display: flex;
+  &-body {
+    min-height: 100vh;
+    background-color: #e5e5e5b9;
+    width: 100%;
+    &-topbar {
+      display: flex;
+      justify-content: space-between;
+      padding: 20px;
+      border-bottom: 2px solid #e5e5e5;
+      align-items: center;
+      &-header {
+        font-family: "Montserrat", sans-serif;
+        font-size: 22px;
+        font-weight: 700;
+        margin-left: 40px;
+      }
+      &-right {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+    }
+  }
+}
+
+.group-ii {
+  display: flex;
+  position: relative;
+  &-input {
+    width: 212px;
+    height: 35px;
+    border-radius: 8px;
+    border: 1px solid #e5e5e5;
+    margin: 4px 20px 0 0;
+    padding-left: 10px;
+  }
+  &-icon {
+    position: absolute;
+    right: 35px;
+    top: 53%;
+    transform: translateY(-50%);
+  }
+}
+
+.group-ii-input::placeholder {
+  color: #c4c4c4;
+  text-align: start;
+}
+
+input:focus {
+  outline: none;
+}
+
+.add-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #feaf00;
+  color: #ffff;
+  width: 199px;
+  height: 44px;
+  border: none;
+  border-radius: 4px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.list-body {
+  padding: 25px 20px 20px 20px;
+  &-titles {
+    display: flex;
+    margin-top: 15px;
+    border-radius: 15px;
+    justify-content: space-around;
+    font-family: "Montserrat", sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    color: #acacac;
+    padding-bottom: 15px;
+    width: 70%;
+    margin-left: 155px;
+  }
+  &-students {
+    max-height: 700px;
+    overflow-y: auto;
+  }
+}
+
+.list-body-students::-webkit-scrollbar {
+  width: 5px;
+}
+
+.list-body-students::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+
+.list-body-students::-webkit-scrollbar-thumb {
+  background: #d8d9dd;
+  border-radius: 10px;
+}
+
+.list-body-students::-webkit-scrollbar-thumb:hover {
+  background: #d8d9ddb6;
+}
+
+.student-map {
+  display: flex;
+  background-color: #ffff;
+  align-items: center;
+  word-wrap: break-word;
+  margin: 15px 45px 0 30px;
+  border-radius: 15px;
+  justify-content: space-around;
+  &-image {
+    width: 100px;
+    background-color: #ffff;
+  }
+  &-line {
+    width: 200px;
+  }
+  &-icon {
+    height: 20px;
+    width: 20px;
+    background-color: #ffff;
+    cursor: pointer;
+  }
+}
+
+.pagination {
+  display: flex;
+  justify-content: flex-end;
+  margin: 50px 45px 0 0;
+  &-rows {
+    display: flex;
+    margin-right: 10px;
+    &-title {
+      margin-right: 4px;
+    }
+  }
+  &-page-number {
+    display: flex;
+    cursor: pointer;
+  }
+  &-text {
+    margin: 0 10px 0 10px;
+  }
+  &-length {
+    margin-right: 10px;
+  }
+  &-arrow {
+    cursor: pointer;
+    height: 20px;
+    width: 20px;
+  }
+  &-active {
+    font-weight: 600;
+    color: #feaf00;
+    margin-left: 6px;
+  }
+  &-number {
+    margin-left: 6px;
+  }
+}
+
+.select select,
+.select option {
+  font-size: 14px;
+  padding: 1px 3px;
+  border-radius: 0;
+  cursor: pointer;
+}
+select:focus-visible {
+  outline: none;
+}
